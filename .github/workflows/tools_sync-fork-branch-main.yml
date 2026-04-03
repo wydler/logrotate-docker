@@ -35,7 +35,7 @@ jobs:
         with:
           github_token: ${{ steps.generate-token.outputs.token }}
           upstream_repository: samuelru/logrotate
-          target_repository: dwydler/logrotate-docker
+          target_repository: ${{ github.repository }}
           upstream_branch: main
           target_branch: main
           force: false
