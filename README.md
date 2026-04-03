@@ -4,7 +4,7 @@
 
 # Docker Logrotate
 
-[![Build and Publish Docker Image](https://github.com/dwydler/logrotate-docker/actions/workflows/build.docker.images.yml/badge.svg)](https://github.com/dwydler/logrotate-docker/blob/master/.github/workflows/build.docker.images.yml)
+[![Build and Publish Docker Image](https://github.com/wydler/logrotate-docker/actions/workflows/build.docker.images.yml/badge.svg)](https://github.com/wydler/logrotate-docker/blob/master/.github/workflows/build.docker.images.yml)
 [![Docker Image Version (tag latest)](https://img.shields.io/docker/v/wydler/logrotate/latest)](https://hub.docker.com/r/wydler/logrotate) [![Docker Image Size (tag latest)](https://img.shields.io/docker/image-size/wydler/logrotate/latest)](https://hub.docker.com/r/wydler/logrotate) [![Docker Pulls](https://img.shields.io/docker/pulls/wydler/logrotate)](https://hub.docker.com/r/wydler/logrotate) [![Docker Stars](https://img.shields.io/docker/stars/wydler/logrotate)](https://hub.docker.com/r/wydler/logrotate)
 
 A Docker image that performs log rotation for other containers running in the same Docker Swarm environment.

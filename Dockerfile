@@ -5,10 +5,10 @@ FROM alpine:3.23.3
 LABEL maintainer="Daniel Wydler"
 LABEL org.opencontainers.image.authors="Daniel Wydler"
 LABEL org.opencontainers.image.description="Docker image for rotating log files from other containers."
-LABEL org.opencontainers.image.documentation="https://github.com/dwydler/logrotate-docker/blob/master/README.md"
-LABEL org.opencontainers.image.source="https://github.com/dwydler/logrotate-docker"
+LABEL org.opencontainers.image.documentation="https://github.com/wydler/logrotate-docker/blob/master/README.md"
+LABEL org.opencontainers.image.source="https://github.com/wydler/logrotate-docker"
 LABEL org.opencontainers.image.title="wydler/logrotate"
-LABEL org.opencontainers.image.url="https://github.com/dwydler/logrotate-docker"
+LABEL org.opencontainers.image.url="https://github.com/wydler/logrotate-docker"
 
 # Install required packages
 RUN apk upgrade --no-cache \
