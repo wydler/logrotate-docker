@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dwydler/logrotate-docker/refs/heads/master/.github/assets/logrotate-logo.png" alt="Docker Logrotate Logo" width="200" height="200">
+  <img src="https://raw.githubusercontent.com/wydler/logrotate-docker/refs/heads/master/.github/assets/logrotate-logo.png" alt="Docker Logrotate Logo" width="200" height="200">
 </p>
 
 # Docker Logrotate
 
 A lightweight Docker image that performs log rotation for other containers running in the same Docker environment.
 
-[![Build and Publish Docker Image](https://github.com/dwydler/logrotate-docker/actions/workflows/build.docker.images.yml/badge.svg)](https://github.com/dwydler/logrotate-docker/blob/master/.github/workflows/build.docker.images.yml)
+[![Build and Publish Docker Image](https://github.com/wydler/logrotate-docker/actions/workflows/build.docker.images.yml/badge.svg)](https://github.com/wydler/logrotate-docker/blob/master/.github/workflows/build.docker.images.yml)
 
 ## 📦 Available Tags
 
@@ -71,8 +71,8 @@ volumes:
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/dwydler/logrotate-docker)
-- [Full Documentation](https://github.com/dwydler/logrotate-docker/blob/master/README.md)
+- [GitHub Repository](https://github.com/wydler/logrotate-docker)
+- [Full Documentation](https://github.com/wydler/logrotate-docker/blob/master/README.md)
 
 ## 📄 License
 
