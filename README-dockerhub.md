@@ -54,6 +54,7 @@ services:
       LOGS_PATH: "/logs/*.log"
       TRIGGER_INTERVAL: daily
       MAX_SIZE: 100M
+      MAX_AGE: 30
       MAX_BACKUPS: 30
       DELAYCOMPRESS: "true"
 
@@ -83,6 +84,7 @@ Notes:
 | `LOGS_PATH` | Path to log files to rotate | `/logs/*.log` | Any valid path pattern |
 | `TRIGGER_INTERVAL` | How often to rotate logs | `daily` | `hourly`, `daily`, `weekly`, `monthly`, `yearly` |
 | `MAX_SIZE` | Rotate if log file size reaches this threshold | `NONE` | `NONE` or size (e.g., `1K`, `10M`, `1G`) |
+| `MAX_AGE` | Remove rotated logs older than N days | `365` | `NONE` or days (e.g., `7`, `30`, `365`) |
 | `MAX_BACKUPS` | Number of backup copies to keep | `365` | Any positive integer |
 | `DELAYCOMPRESS` | Delay compression of rotated logs until next rotation | `true` | `true`, `false` |
 | `TZ` | Timezone | `UTC` | Any valid timezone (e.g., `Europe/Berlin`) |

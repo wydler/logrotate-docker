@@ -67,6 +67,11 @@ generate_logrotate_config() {
         echo "    size ${MAX_SIZE}" >> /etc/logrotate.d/docker-logs
     fi
 
+    # Add max age for rotated files if specified (in days)
+    if [ "${MAX_AGE}" != "NONE" ] && [ -n "${MAX_AGE}" ]; then
+        echo "    maxage ${MAX_AGE}" >> /etc/logrotate.d/docker-logs
+    fi
+
     # Close the configuration block
     echo "}" >> /etc/logrotate.d/docker-logs
     
@@ -122,6 +127,7 @@ main() {
     LOGS_PATH=$(strip_quotes "${LOGS_PATH}")
     TRIGGER_INTERVAL=$(strip_quotes "${TRIGGER_INTERVAL}")
     MAX_SIZE=$(strip_quotes "${MAX_SIZE}")
+    MAX_AGE=$(strip_quotes "${MAX_AGE}")
     MAX_BACKUPS=$(strip_quotes "${MAX_BACKUPS}")
     TZ=$(strip_quotes "${TZ}")
     DELAYCOMPRESS=$(strip_quotes "${DELAYCOMPRESS}")
@@ -132,6 +138,7 @@ main() {
     echo "LOGS_PATH: ${LOGS_PATH}"
     echo "TRIGGER_INTERVAL: ${TRIGGER_INTERVAL}"
     echo "MAX_SIZE: ${MAX_SIZE}"
+    echo "MAX_AGE: ${MAX_AGE}"
     echo "MAX_BACKUPS: ${MAX_BACKUPS}"
     echo "TZ: ${TZ}"
     echo "DELAYCOMPRESS: ${DELAYCOMPRESS}"

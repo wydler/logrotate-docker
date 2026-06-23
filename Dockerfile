@@ -26,6 +26,7 @@ RUN chmod +x /entrypoint.sh
 ENV LOGS_PATH="/logs/*.log" \
     TRIGGER_INTERVAL="daily" \
     MAX_SIZE="NONE" \
+    MAX_AGE="365" \
     MAX_BACKUPS="365" \
     TZ="UTC" \
     DELAYCOMPRESS="true"
