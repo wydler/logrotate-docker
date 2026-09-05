@@ -31,7 +31,7 @@ jobs:
           fetch-depth: 0
 
       - name: Synchronize the given branch now
-        uses: TobKed/github-forks-sync-action@2fb78daa46a630ff56455a63dec51ff00ba56e23  # v0.4.0
+        uses: TobKed/github-forks-sync-action@52429f0e1732f747a6d0654dd27867339237268f  # v0.5.1
         with:
           github_token: ${{ steps.generate-token.outputs.token }}
           upstream_repository: samuelru/logrotate
